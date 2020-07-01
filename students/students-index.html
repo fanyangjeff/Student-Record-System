@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <link rel="stylesheet" href="../bootstrap.css">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">Student Record System</span>
+        <span><button class="btn btn-info" id="logout">log out</button></span>
+
+    </nav>
+
+    <div class="container">
+        <table class="table table-sm">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">PID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Chinese</th>
+                <th scope="col">Math</th>
+                <th scope="col">English</th>
+              </tr>
+            </thead>
+            <tbody id = "table-body">
+            </tbody>
+          </table>
+    </div>
+
+    
+</body>
+    <style>
+    </style>
+    <script src="students-main.js"></script>
+    <script src="../ajax.js"></script>
+</html>

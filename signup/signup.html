@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap.css">
+
+    <title>Student Record System</title>
+</head>
+<body>
+    <div class="container nopadding" id="mainContainer">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary user-type">Students</button>
+                <button type="button" class="btn btn-secondary user-type">Teachers</button>
+                <button type="button" class="btn btn-secondary user-type">Administers</button>
+            </div>
+            <div id="login-body">
+                <div class="form-group">
+                    <label for="PID">PID</label>
+                    <input type="text" id="pid" class="form-control input-sm" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text", id="name" class="form-control input-sm">
+                </div>
+
+                <div class="form-group display-none" id="subject">
+                    <label for="subject">Subject</label>
+                    <input type="text", id="subject" class="form-control input-sm">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">password</label>
+                    <input type="password", id="password" class="form-control input-sm">
+                </div>
+
+                <div class="alert display-none" id="alert-box" role="alert">
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="signup-button">sign up</button>
+
+            </div>
+    </div>
+</body>
+    <style>
+        #mainContainer{
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border: 1px grey solid;
+        }
+        #login-body{
+            width: 340px;
+            height: auto;
+           
+            position: absolute;
+            border-radius: 5%;
+        }
+        
+        #signup-button{
+            position: absolute;
+        }
+        .input-sm{
+            height: 30px;
+        }
+
+        .nopadding{
+            padding: 0 0 0 0;
+        }
+
+
+        .display-block{
+            display: block;
+        }
+
+        .display-none{
+            display: none;
+        }
+        
+
+    </style>
+    <script src="signup.js"></script>
+    <script src="../ajax.js"></script>
+</html>

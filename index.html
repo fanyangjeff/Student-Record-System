@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <title>Student Record System</title>
+</head>
+<body>
+    <div class="container nopadding" id="mainContainer">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary user-type">Students</button>
+                <button type="button" class="btn btn-secondary user-type">Teachers</button>
+                <button type="button" class="btn btn-secondary user-type">Administers</button>
+            </div>
+            <div id="login-body">
+                <div class="form-group">
+                    <label for="pid">PID</label>
+                    <input type="text" class="form-control input-sm" id="pid" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">password</label>
+                    <input type="password", class="form-control input-sm", id="password">
+                </div>
+
+                <span><a href="signup/signup.html">signup</a></span>
+                <button type="submit" class="btn btn-primary" id="login-button">Login</button>
+
+            </div>
+
+            <div class="alert" id="alert-box">
+            </div>
+    </div>
+</body>
+    <style>
+        #mainContainer{
+            position: absolute;
+            width: 500px;
+            height: 400px;
+            border: 1px grey solid;
+        }
+        #login-body{
+            width: 340px;
+            height: auto;
+           
+            position: absolute;
+            border-radius: 5%;
+        }
+        
+        #login-button{
+            position: absolute;
+        }
+
+        #alert-box{
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+        }
+        .input-sm{
+            height: 30px;
+        }
+
+        .nopadding{
+            padding: 0 0 0 0;
+        }
+        
+        
+    </style>
+    <script src="ajax.js"></script>
+    <script src="main.js"></script>
+</html>
